@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar {
+    background-color: #F2EEED;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.navbar nav {
+    display: flex;
+}
+  
+.navbar nav ul {
+    display: flex;
+    margin-top: 30px;
+}
+  
+.navbar nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+  
+.navbar nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: black;
+}
+  
+.navbar nav ul li a:hover {
+    color: #C6A48C;
+}
+  
+.nav-hr {
+    width: 50%;
+    margin-top: 10px;
+    background-color: #C6A48C;
+    height: 1.5px;
+    outline: none;
+    border: none;
+}
+  
