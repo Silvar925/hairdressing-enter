@@ -125,12 +125,6 @@ body {
     font-size: 20px;
 }
 
-.info-service {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-}
-
 .info-service p {
     width: 420px;
     font-family: 'Montserrat', sans-serif;
@@ -161,7 +155,7 @@ body {
 }
 
 .callbacks-box hr {
-    flex: 1; /* Занимаем доступное пространство равномерно */
+    flex: 1; 
     height: 1.5px;
     background-color: #C6A48C;
     border: none;
@@ -179,7 +173,18 @@ body {
 }
 
 .callbacks-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
     margin-bottom: 20px;
+}
+
+.callbacks-title hr {
+    flex: 1; 
+    height: 1.5px;
+    background-color: #C6A48C;
+    border: none;
+    outline: none;
 }
 
 .callbacks-title h1 {
@@ -189,10 +194,8 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     padding: 10px;
     height: 473px;
     width: 360px;
@@ -228,4 +231,104 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     outline: none;
+}
+
+
+.action-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px
+}
+
+.action-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-title h1 {
+    color: #C6A48C;
+    font-size: 70px;
+}
+
+.action {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.action-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.action-card h3 {
+    margin-top: 10px;
+}
+
+.action-card p {
+    margin-top: 10px;
+}
+
+.action-card img {
+    height: 200px;
+    width: 380px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.action-card button {
+    padding: 10px;
+    outline: none;
+    border: 1.5px solid #C6A48C;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.gallery-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.gallery-title h1 {
+    color: #C6A48C;
+    font-size: 70px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.gallery img {
+    height: 200px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info {
+    display: flex;
+    margin-top: 30px;
+}
+
+.additional-info nav ul {
+    display: flex;
+}
+
+.additional-info nav ul li {
+    margin-left: 10px;
+}
+
+.additional-info nav ul li {
+    list-style: none;
+}
+
+.additional-info nav ul li a {
+    text-decoration: none;
 }
