@@ -1,0 +1,332 @@
+.autentificationForm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    gap: 20px;
+}
+
+.autentificationForm .autentificationForm_title {
+    font-size: 24px;
+    font-weight: 600;
+    width: 400px;
+    text-align: center;
+}
+
+.autentificationForm_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 25px;
+    font-weight: 400;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--item-elements);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+}
+
+.autentificationForm_block__message {
+    color: var(--item-delete);
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 14px;
+    background-color: var(--item-delete);
+    color: var(--white);
+    padding: 15px 20px;
+}
+
+.autentificationForm_block__message___success {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 14px;
+    background-color: var(--item-message);
+    color: var(--white);
+    padding: 15px 20px;
+}
+
+.admin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.admin_menu {
+    width: var(--menu-width);
+    height: 100%;
+    background-color: var(--item-main);
+    color: var(--white);
+}
+
+.admin_info {
+    width: calc(100% - var(--menu-width));
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.admin_menu__logo a {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    padding: 0px 20px;
+}
+
+.admin_menu__items {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin_menu__items ul li {
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.admin_menu__items ul a {
+    display: flex;
+    color: var(--white);
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.admin_menu__items ul a:hover {
+    background-color: var(--item-hover);
+}
+
+.admin_menu__items ul li:hover {
+    background-color: var(--item-hover);
+}
+
+.activeItem {
+    background-color: var(--active-item) !important;
+}
+
+.triangle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    background-color: var(--item-main);
+    width: 10px;
+    height: 20px;
+    -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.activeItem .triangle {
+    background-color: var(--white) !important;
+}
+
+.admin_info__elem___btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.admin_info__elem___allData {
+    padding: 10px 20px;
+    border: 1px solid var(--active-item);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_info__elem___allData:hover {
+    background-color: var(--active-item);
+    color: var(--white);
+}
+
+.activeTabName {
+    background-color: var(--active-item);
+    color: var(--white);
+}
+
+.admin_info__elem___formData {
+    display: none;
+}
+
+.admin_info__item___content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin_info__item___content____element {
+    background-color: var(--item-hover);
+    width: 49%;
+    height: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin_info__item___content____element_____title {
+    height: 65%;
+    font-size: 16px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.admin_info__item___content____element:hover .admin_info__item___content____element_____btnHover {
+    display: flex;
+}
+
+.admin_info__item___content____element_____btnHover {
+    display: none;
+    gap: 10px;
+}
+
+.admin_info__item___content____element_____title img {
+    height: 100%;
+}
+
+.admin_info__item___content____element_____btnHover______title:hover {
+    opacity: 1;
+}
+
+.admin_info__item___content____element_____btnHover______title {
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.5;
+    color: var(--white);
+}
+
+.delete {
+    color: var(--item-delete);
+}
+
+.admin_info__item___content____element_____btnHover______title {
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.admin_info__item___content____element_____btnHover______title:hover {
+    opacity: 1;
+}
+
+.comeBack {
+    width: 200px;
+    padding: 12px 15px;
+    color: var(--white);
+    background-color: var(--item-hover);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.comeBack:hover {
+    background-color: var(--active-item);
+}
+
+.comeBack img {
+    width: 10px;
+}
+
+.updateDataForm {
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid var(--item-hover);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+}
+
+.updateDataForm:hover {
+    background-color: var(--active-item);
+    border: 1px solid var(--active-item);
+    color: var(--white);
+}
+
+.delImg{
+    width: 100px;
+    height: 35px;
+    background-color: brown;
+    color: var(--white);
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.delImg:hover{
+    opacity: 1;
+}
+
+
+.note-editable{
+    min-height: 200px;
+}
+
+.formData_choseBlocks{
+    display: flex;
+    gap: 10px;
+}
+
+.formData_choseBlocks__element{
+    padding: 10px;
+    border: 2px solid var(--active-item);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.formData_choseBlocks__element:hover, .activeFormDataElement{
+    background-color: var(--active-item);
+    color: var(--white);
+}

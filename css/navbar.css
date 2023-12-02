@@ -3,8 +3,8 @@
     border: none;
     outline: none;
     height: 1.5px;
-    width: 50%; 
-    margin: 0 auto; 
+    width: 50%;
+    margin: 0 auto;
 }
 
 .navbar-box nav {
@@ -56,7 +56,7 @@
 
 .text h1 {
     font: 70pt "Literature Decor";
-    color: #C6A48C;    ;
+    color: #C6A48C;
 }
 
 .text h2 {
@@ -67,4 +67,9 @@
 
 .text p {
     font: 15pt "Montserrat";
+}
+
+.mainPageNav {
+    background-color: #F2EEED;
+    height: 700px;
 }

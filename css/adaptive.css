@@ -1,0 +1,32 @@
+@media (min-width:320px) and (max-width: 425px) {
+    .text h1 {
+        font: 45pt "Literature Decor";
+        color: #C6A48C;
+    }    
+
+    .text h2 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font: 20pt "Literature Decor";
+    }
+
+    .text p {
+        text-align: center;
+        font: 10pt "Montserrat";
+    }
+
+    .mainPageNav {
+        width: 100%;
+        background-color: #F2EEED;
+        height: 500px;
+    }
+
+    .navbar-box {
+        width: 100%;
+    }
+
+    .navbar-box nav ul li a {
+        font-size: 12px;
+    }
+}
