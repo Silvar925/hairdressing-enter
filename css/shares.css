@@ -37,6 +37,10 @@
     margin-top: 5px;
 }
 
+.card img {
+    width: 100%;
+}
+
 .price-info {
     display: flex;
     flex-direction: column;
@@ -52,4 +56,8 @@
     margin-top: 5px;
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.card-image-gallery {
+    margin-right: 30px;
 }

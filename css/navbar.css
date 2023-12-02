@@ -1,5 +1,5 @@
 .navbar-box hr {
-    background-color: #D9A4A4;
+    background-color: #C6A48C;
     border: none;
     outline: none;
     height: 1.5px;
@@ -38,7 +38,6 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    border: 1px solid #C6A48C;
     height: 550px;
     margin-right: 30%;
     margin-left: 30%;

@@ -8,12 +8,11 @@ body {
 }
 
 h2 {
-    color: #D9A4A4;
+    color: #C6A48C;
     font: 20pt "Literature Decor";
-
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-
-
 
 .service-title {
     display: flex;
@@ -22,6 +21,13 @@ h2 {
 
 .service-title h1 {
     color: #D9A4A4;
+}
+
+.service-title a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font: 12pt "Literature Decor";
 }
 
 .service-block {
@@ -35,17 +41,6 @@ h2 {
     margin-left: 20px;
 }
 
-
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.text h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 .service-block-right {
     display: flex;
@@ -63,4 +58,9 @@ h2 {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+}
+
+.text-service button {
+    margin-top: 70px;
+    width: 300px;
 }
