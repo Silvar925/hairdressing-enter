@@ -13,52 +13,7 @@ h2 {
 
 }
 
-.navbar-box hr {
-    background-color: #D9A4A4;
-    border: none;
-    outline: none;
-    height: 1.5px;
-    width: 50%; 
-    margin: 0 auto; 
-}
 
-.navbar-box nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.navbar-box nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-box nav ul li {
-    margin-left: 30px;
-    list-style: none;
-}
-
-.navbar-box nav ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.navbar-box nav ul li a:hover {
-    color: #D9A4A4;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.container h1 {
-    color: #D9A4A4;
-    font: 50pt "Literature Decor";
-}
 
 .service-title {
     display: flex;
@@ -92,17 +47,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-.text button {
-    outline: none;
-    padding: 10px;
-    height: 50px;
-    border-radius: 50px;
-    border: 1px solid #D9A4A4;
-    background-color: #FFFFFF;
-    width: 400px;
-}
-
-
 .service-block-right {
     display: flex;
     margin-top: 30px;
@@ -118,38 +62,5 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.additional-info-box hr {
-    background-color: #D9A4A4;
-    border: none;
-    outline: none;
-    height: 1.5px;
-    width: 50%; 
-    margin: 0 auto; 
     margin-bottom: 50px;
-}
-
-.additional-info {
-    display: flex;
-}
-
-.additional-info ul {
-    display: flex;
-}
-
-.additional-info ul li {
-    margin-left: 50px;
-    list-style: none;
-    margin-bottom: 10px;
-
-}
-
-.additional-info ul li a {
-    text-decoration: none;
-}
-
-.phone {
-    margin-bottom: 10px;
-    margin-left: 20px;
 }
