@@ -64,3 +64,17 @@ h2 {
     margin-top: 70px;
     width: 300px;
 }
+
+.text-service p {
+    width: 900px; 
+    font-size: 20px;
+}
+
+.textP {
+    width: 900px; 
+    font-size: 20px;
+}
+
+.additional-text {
+    display: flex;
+}

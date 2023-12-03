@@ -129,3 +129,12 @@ button:hover {
     width: 100px;
     border-radius: 50px;
 }
+
+
+.info-serivce button {
+    margin-top: 70px;
+}
+
+.services-1 {
+    display: flex;
+}
