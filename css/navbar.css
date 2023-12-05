@@ -71,5 +71,6 @@
 
 .mainPageNav {
     background-color: #F2EEED;
+    /* background-image: url(/images/navbackground.png); */
     height: 700px;
 }
