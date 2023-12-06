@@ -12,41 +12,6 @@ button:hover {
     color: white;
 }
 
-.additional-info-box {
-    margin-top: 20px;
-}
-
-.additional-info-box hr {
-    background-color: #C6A48C;
-    border: none;
-    outline: none;
-    height: 1.5px;
-    width: 50%; 
-    margin: 0 auto; 
-    margin-bottom: 50px;
-}
-
-.additional-info {
-    display: flex;
-}
-
-.additional-info ul {
-    display: flex;
-}
-
-.additional-info ul li {
-    margin-left: 50px;
-    list-style: none;
-    margin-bottom: 10px;
-
-}
-
-.additional-info ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .list-text {
     display: flex;
     flex-direction: column;
@@ -89,7 +54,6 @@ button:hover {
     font-size: 20px;
     color: #C6A48C;
 }
-
 
 .row {
     display: flex;
@@ -137,4 +101,67 @@ button:hover {
 
 .services-1 {
     display: flex;
+}
+
+.bottomMenu {
+    width: 100vh;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.bottomMenu hr {
+    height: 2px;
+    background-color: #C6A48C;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.bottomMenu nav {
+    display: flex;
+    align-items: center; 
+}
+
+.bottomMenu nav ul {
+    display: flex;
+    margin-right: auto; 
+}
+
+.bottomMenu nav ul li {
+    margin-left: 30px;
+    list-style: none;
+}
+
+.bottomMenu nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottomMenu nav ul li a:hover {
+    color: #C6A48C;
+}
+
+.bottomMenu .phoneInfo {
+    margin-left: auto;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.info p {
+    margin-top: 10px;
+    font: 10pt 'Montserrat';
+}
+
+.icon {
+    margin-left: auto;
+}
+
+.icon a img {
+    height: 50px;
 }
