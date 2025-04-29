@@ -1,9 +1,0 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.feedback-box {
-    display: flex;
-    flex-direction: column;
-}

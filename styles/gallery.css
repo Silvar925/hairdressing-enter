@@ -1,0 +1,43 @@
+.gallery {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.gallery__title {
+    font-family: var(--literature);
+    font-size: 4rem;
+    color: var(--alt-accent-color);
+    text-align: center;
+}
+
+.gallery__filter-list {
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery__filter-link {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+
+.gallery__filter-link:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.gallery__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery__img {
+    width: 100%;
+}

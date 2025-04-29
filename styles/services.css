@@ -1,0 +1,116 @@
+.services {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.services__title {
+    font-family: var(--literature);
+    font-size: 4rem;
+    color: var(--alt-accent-color);
+    text-align: center;
+}
+
+.services__list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.services__item {
+    display: flex;
+    gap: 20px;
+}
+
+.services__item-description {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.serivces__item-link {
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    color: var(--alt-accent-color);
+    transition: var(--transition);
+}
+
+.serivces__item-link:hover {
+    text-decoration: underline;
+}
+
+.services__item-title {
+    font-family: var(--literature);
+    font-size: 2rem;
+    color: var(--alt-accent-color);
+}
+
+.services__item-text {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    line-height: 150%;
+    font-size: 1.25rem;
+}
+
+.services__img {
+    width: 300px;
+    object-fit: cover;
+    border-bottom-left-radius: 192px;
+}
+
+.revers img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 192px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .services__item {
+        flex-direction: column;
+    }
+
+    .services__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .revers {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .services__title {
+        font-size: 2.5rem;
+    }
+
+    .services__item-text {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .discount__title {
+        font-size: 2.5rem;
+    }
+
+    .description-service__text {
+        font-size: 1rem;
+    }
+
+    .description-service__price-item-name {
+        font-size: 1rem;
+    }
+
+    .description-service__price {
+        font-size: 1rem;
+    }
+
+    .work-examples__title {
+        font-size: 1.5rem;
+    }
+
+    .description-service__title {
+        font-size: 1.9rem;
+    }
+}

@@ -1,0 +1,87 @@
+.discount {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.discount__title {
+    color: var(--accent-color);
+    font-size: 4.1667rem;
+    font-family: var(--literature);
+    text-align: center;
+    font-weight: 400;
+}
+
+.discount__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.discount__card {
+    width: 100%;
+}
+
+.discount__img {
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.discount__card-title {
+    font-size: 2rem;
+    color: var(--alt-accent-color);
+    font-family: var(--literature);
+    font-weight: 400;;
+}
+
+.discount__card-description {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+}
+
+.discount__card-button {
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    width: 40%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.discount__card-header {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.discount__card-button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .discount__card {
+        width: 100%;
+    }
+
+    .discount__img {
+        height: auto;
+    }
+
+    .discount__card {
+        width: 100%;
+    }
+
+    .discount__list {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+}

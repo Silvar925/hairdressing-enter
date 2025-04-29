@@ -1,0 +1,108 @@
+.review {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.review__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.review__title {
+    font-family: var(--literature);
+    font-size: clamp(2rem, 5vw, 4rem); /* от 2rem на мобилках до 4rem на десктопах */
+    color: var(--alt-accent-color);
+    text-align: center;
+}
+
+.review__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.review__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    max-width: 360px;
+    background: var(--card-bg, #fff);
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border: 1px solid var(--accent-color);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.review__img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+}
+
+.review__card-header {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.review__card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.review__card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+/* Медиазапросы для ещё лучшего контроля */
+
+@media (max-width: 768px) {
+    .review {
+        padding: 30px 10px;
+    }
+
+    .review__list {
+        gap: 20px;
+    }
+
+    .review__card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .review__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .review__card-title {
+        font-size: 1rem;
+    }
+
+    .review__card-description {
+        font-size: 0.9rem;
+    }
+}

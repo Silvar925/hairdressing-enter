@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Literature Decor";
+    src: url("../fonts/Literature-Decor.ttf") format("truetype");
+
+    font-family: 'Sweet Mavka Script';
+    src: url('../fonts/Sweet-Mavka-Script.otf') format('truetype');
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+:root {
+    --literature: "Literature Decor", sans-serif;
+    --transition: color 0.3s ease, transform 0.3s ease;
+    --accent-color: #C6A48C;
+    --alt-accent-color: #D9A4A4;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header__menu {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.header__menu-link {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.header__menu-link:hover {
+    color: var(--accent-color);
+}
+
+.color-white {
+    color: white;
+}
+
+.color-accaent {
+    color: var(--accent-color);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__mobile-menu {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 454px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header__mobile-menu {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .mobile-burger img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .header__menu-mobile-list {
+        padding: 0 20px;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        gap: 10px;
+        display: none;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.footer hr {
+    width: 100%;
+    color: var(--accent-color);
+}
+
+.footer__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu-list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__menu-link {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    color: black;
+    transition: var(--transition);
+}
+
+.footer__menu-link:hover {
+    color: var(--accent-color);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__bottom-item {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__phone {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.footer__phone-num {
+    font-family: 'Montserrat';
+    font-size: 1.125rem;
+}
+
+.footer__phone-title {
+    font-family: 'Montserrat';
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.footer__bottom-social {
+    display: flex;
+    gap: 5px;
+}
+
+.footer__telegram,
+.footer__vk {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 545px) {
+    .footer__menu {
+        display: none;
+    }
+
+    .temp {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+.second-header {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.second-header ul li a {
+    color: black;
+}
+
+.section-width {
+    margin-top: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__button {
+    border: 1px solid var(--accent-color);
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 0;
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.section__button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .section-width {
+        padding: 0 20px;
+    }
+}
+
+.active {
+    display: flex !important;
+}
+
+.second-menu-list {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+}
